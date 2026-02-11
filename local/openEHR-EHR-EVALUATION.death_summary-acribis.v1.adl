@@ -128,7 +128,7 @@ US Standard Certificate of Death [Internet]. Atlanta; Centre for Disease Control
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"af85239fdea42f6656676258605842c1">
+		["MD5-CAM-1.0.1"] = <"9d43863e6233a593b0a2cc13c3a0deda">
 		["build_uid"] = <"96f4c8c1-8f3d-42c7-a028-41eb22294c5e">
 		["revision"] = <"1.0.0">
 	>
@@ -249,14 +249,14 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0.5] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
-						value matches {
-							DV_CODED_TEXT matches {*}
-						}
-					}
 					ELEMENT[at0.6] occurrences matches {0..1} matches {    -- DV_BOOLEAN
 						value matches {
 							DV_BOOLEAN matches {*}
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.5] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+						value matches {
 							DV_CODED_TEXT matches {*}
 						}
 					}
