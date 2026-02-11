@@ -128,7 +128,7 @@ US Standard Certificate of Death [Internet]. Atlanta; Centre for Disease Control
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"caf68ada237b1348079ac9d680ea77c3">
+		["MD5-CAM-1.0.1"] = <"af85239fdea42f6656676258605842c1">
 		["build_uid"] = <"96f4c8c1-8f3d-42c7-a028-41eb22294c5e">
 		["revision"] = <"1.0.0">
 	>
@@ -140,14 +140,8 @@ definition
 				items cardinality matches {0..*; unordered} matches {
 					ELEMENT[at0.1] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
 						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0.2,    -- *Ja (de)
-									at0.3,    -- *Nein (de)
-									at0.4]    -- *Unbekannt (de)
-								}
-							}
+							DV_CODED_TEXT matches {*}
+							DV_BOOLEAN matches {*}
 						}
 					}
 					ELEMENT[at0092] occurrences matches {0..1} matches {    -- Date/time of death
@@ -432,18 +426,6 @@ For example: 'Driving a car'; 'Skiing' and 'Showering'.">
 					text = <"DV_CODED_TEXT">
 					description = <"">
 				>
-				["at0.2"] = <
-					text = <"*Ja (de)">
-					description = <"">
-				>
-				["at0.3"] = <
-					text = <"*Nein (de)">
-					description = <"">
-				>
-				["at0.4"] = <
-					text = <"*Unbekannt (de)">
-					description = <"">
-				>
 				["at0.5"] = <
 					text = <"DV_CODED_TEXT">
 					description = <"">
@@ -598,18 +580,6 @@ Det finnes et verdisett for skadeaktivitet tilgjengelig i FHI sitt skjema for DÃ
 					text = <"*DV_CODED_TEXT (en)">
 					description = <"">
 				>
-				["at0.2"] = <
-					text = <"*Ja (de)">
-					description = <"">
-				>
-				["at0.3"] = <
-					text = <"*Nein (de)">
-					description = <"">
-				>
-				["at0.4"] = <
-					text = <"*Unbekannt (de)">
-					description = <"">
-				>
 				["at0.5"] = <
 					text = <"*DV_CODED_TEXT (en)">
 					description = <"">
@@ -757,18 +727,6 @@ Beispiel: \"Autofahren\", \"Skifahren\" und \"Duschen\".">
 				>
 				["at0.1"] = <
 					text = <"Verstorben">
-					description = <"">
-				>
-				["at0.2"] = <
-					text = <"Ja">
-					description = <"">
-				>
-				["at0.3"] = <
-					text = <"Nein">
-					description = <"">
-				>
-				["at0.4"] = <
-					text = <"Unbekannt">
 					description = <"">
 				>
 				["at0.5"] = <
