@@ -1,0 +1,107 @@
+archetype (adl_version=1.4; uid=6bbae268-51d4-420c-91d8-a7ab18fb79ce)
+	openEHR-EHR-COMPOSITION.follow_up.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::de]>
+
+description
+	original_author = <
+		["date"] = <"2026-02-11">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"8643337cb1360df8025e4d9801efa2ab">
+		["build_uid"] = <"f882e434-8fee-3a9b-a0c7-c48370ee37b6">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- follow_up
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {
+					[openehr::433]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT matches {
+				other_context matches {
+					ITEM_TREE[at0001] matches {    -- Item tree
+						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0002] occurrences matches {0..1} matches {    -- Ausfüllende Person
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0010,    -- Patient/Patientin
+											at0011,    -- Angehöriger/Angehörige
+											at0012,    -- Arzt/Ärztin
+											at0013]    -- Andere Person
+										}
+									}
+								}
+							}
+							ELEMENT[at0007] occurrences matches {0..1} matches {    -- Name des Probanden
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"follow_up">
+					description = <"follow_up">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Ausfüllende Person">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Name des Probanden">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Patient/Patientin">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Angehöriger/Angehörige">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Arzt/Ärztin">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Andere Person">
+					description = <"">
+				>
+			>
+		>
+	>
