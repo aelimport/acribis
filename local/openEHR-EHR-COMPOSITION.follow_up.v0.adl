@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"537f385f582b41b6953d5584b113323f">
+		["MD5-CAM-1.0.1"] = <"498f7d8704adf354ea7e1d7684005b44">
 		["build_uid"] = <"f882e434-8fee-3a9b-a0c7-c48370ee37b6">
 	>
 
@@ -68,6 +68,9 @@ definition
 				}
 			}
 		}
+		content cardinality matches {1..*; unordered} matches {
+			ENTRY[at0019] occurrences matches {0..1} matches {*}    -- ENTRY
+		}
 	}
 
 ontology
@@ -108,6 +111,10 @@ ontology
 				>
 				["at0018"] = <
 					text = <"Zusätzliche Angaben">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"ENTRY">
 					description = <"">
 				>
 			>
