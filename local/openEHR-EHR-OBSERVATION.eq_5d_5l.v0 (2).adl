@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8febb5aee074d937e9fdc662d32f6637">
+		["MD5-CAM-1.0.1"] = <"d3a89b49c3d803adefd00cf8716f04e9">
 		["build_uid"] = <"a9fa53fd-da5c-3123-8485-f00b9bbad65a">
 	>
 
@@ -87,6 +87,9 @@ definition
 					}
 				}
 			}
+		}
+		protocol matches {
+			ITEM_TREE[at0034] matches {*}    -- Item tree
 		}
 	}
 
@@ -230,6 +233,10 @@ alltäglichen Tätigkeiten nachzugehen">
 				["at0033"] = <
 					text = <"extrem">
 					description = <"">
+				>
+				["at0034"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
 				>
 			>
 		>
