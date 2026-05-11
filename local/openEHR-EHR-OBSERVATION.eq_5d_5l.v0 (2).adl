@@ -1,0 +1,236 @@
+archetype (adl_version=1.4; uid=75fdf1ca-43bc-41df-a764-6512af16c41f)
+	openEHR-EHR-OBSERVATION.eq_5d_5l.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::de]>
+
+description
+	original_author = <
+		["date"] = <"2026-05-11">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"8febb5aee074d937e9fdc662d32f6637">
+		["build_uid"] = <"a9fa53fd-da5c-3123-8485-f00b9bbad65a">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- EQ_5D_5L
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- BEWEGLICHKEIT / MOBILITÄT
+										value matches {
+											1|[local::at0005],
+											2|[local::at0006],
+											3|[local::at0007],
+											4|[local::at0008],
+											5|[local::at0009]
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {    -- FÜR SICH SELBST SORGEN
+										value matches {
+											1|[local::at0011],
+											2|[local::at0012],
+											3|[local::at0013],
+											4|[local::at0014],
+											5|[local::at0015]
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {    -- ALLTÄGLICHE TÄTIGKEITEN
+										value matches {
+											1|[local::at0017],
+											2|[local::at0018],
+											3|[local::at0019],
+											4|[local::at0020],
+											5|[local::at0021]
+										}
+									}
+									ELEMENT[at0022] occurrences matches {0..1} matches {    -- SCHMERZEN / KÖRPERLICHE BESCHWERDEN
+										value matches {
+											1|[local::at0023],
+											2|[local::at0024],
+											3|[local::at0025],
+											4|[local::at0026],
+											5|[local::at0027]
+										}
+									}
+									ELEMENT[at0028] occurrences matches {0..1} matches {    -- ANGST / NIEDERGESCHLAGENHEIT
+										value matches {
+											1|[local::at0029],
+											2|[local::at0030],
+											3|[local::at0031],
+											4|[local::at0032],
+											5|[local::at0033]
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"EQ_5D_5L">
+					description = <"EQ_5D_5L">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"BEWEGLICHKEIT / MOBILITÄT">
+					description = <"Fähigkeit des Patienten sich fortzubewegen">
+				>
+				["at0005"] = <
+					text = <"keine">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"leichte">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"mäßige">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"große">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"extrem">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"FÜR SICH SELBST SORGEN">
+					description = <"selbst zu waschen oder anzuziehen">
+				>
+				["at0011"] = <
+					text = <"keine">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"leichte">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"mäßige">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"groß">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"extrem">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"ALLTÄGLICHE TÄTIGKEITEN">
+					description = <"z.B. Arbeit, Studium, Hausarbeit, Familien- oder Freizeitaktivitäten
+alltäglichen Tätigkeiten nachzugehen">
+				>
+				["at0017"] = <
+					text = <"keine">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"leichte">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"mäßige">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"große">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"extrem">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"SCHMERZEN / KÖRPERLICHE BESCHWERDEN">
+					description = <"Schmerzen oder Beschwerden">
+				>
+				["at0023"] = <
+					text = <"keine">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"leichte">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"mäßige">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"große">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"extrem">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"ANGST / NIEDERGESCHLAGENHEIT">
+					description = <"ängstlich oder deprimiert">
+				>
+				["at0029"] = <
+					text = <"keine">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"leichte">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"mäßige">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"große">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"extrem">
+					description = <"">
+				>
+			>
+		>
+	>
