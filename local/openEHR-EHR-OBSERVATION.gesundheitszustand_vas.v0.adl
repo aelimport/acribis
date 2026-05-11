@@ -1,0 +1,113 @@
+archetype (adl_version=1.4; uid=8e5791e7-c89b-48cb-8f06-2904aea68fa0)
+	openEHR-EHR-OBSERVATION.gesundheitszustand_vas.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::de]>
+
+description
+	original_author = <
+		["date"] = <"2026-05-11">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"71492217094f3c6560b1974d1cedf4e4">
+		["build_uid"] = <"f7a36e67-c26d-3fb0-8f10-6743486b9ec8">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- gesundheitszustand_vas
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Gesundheitszustand heute
+										value matches {
+											DV_QUANTITY matches {*}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {*}    -- ELEMENT
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- ELEMENT
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::380]>
+												list = <
+													["1"] = <
+														units = <"1">
+														magnitude = <|0.0..100.0|>
+														precision = <|0|>
+													>
+												>
+											>
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0005] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["de"] = <
+			items = <
+				["1"] = <
+					text = <"VAS">
+					description = <"1">
+				>
+				["at0000"] = <
+					text = <"gesundheitszustand_vas">
+					description = <"gesundheitszustand_vas">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0006"] = <
+					text = <"Gesundheitszustand heute">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"ELEMENT">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"ELEMENT">
+					description = <"">
+				>
+			>
+		>
+	>
