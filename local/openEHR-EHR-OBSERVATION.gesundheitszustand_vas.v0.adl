@@ -23,8 +23,8 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"71492217094f3c6560b1974d1cedf4e4">
 		["build_uid"] = <"f7a36e67-c26d-3fb0-8f10-6743486b9ec8">
+		["MD5-CAM-1.0.1"] = <"9f297c4c37e0ab947718c9dcce182cff">
 	>
 
 definition
@@ -98,7 +98,9 @@ ontology
 				>
 				["at0006"] = <
 					text = <"Gesundheitszustand heute">
-					description = <"">
+					description = <"Skala von 0 bis 100. 100 = beste vorstellbare Gesundheit, 0 = schlechteste vorstellbare Gesundheit. Patient trägt die Zahl ein, die seinen heutigen Gesundheitszustand am besten beschreibt.">
+					comment = <" EQ VAS – Teil des EQ-5D-5L Fragebogens                                                                                                                                                       ">
+					source = <"EQ-5D, EuroQol Group, Germany (German) © 2009">
 				>
 				["at0007"] = <
 					text = <"ELEMENT">
