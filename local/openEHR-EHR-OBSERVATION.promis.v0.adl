@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2a56ef93957180ee1724f3949798bcba">
+		["MD5-CAM-1.0.1"] = <"cabd81f8d82c185893eb2e8ded4584e7">
 		["build_uid"] = <"3f858335-3ece-32f5-8fb6-07e22048ea88">
 	>
 
@@ -34,11 +34,7 @@ definition
 				events cardinality matches {1..*; unordered} matches {
 					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
 						data matches {
-							ITEM_TREE[at0003] matches {    -- Tree
-								items cardinality matches {0..*; unordered} matches {
-									CLUSTER[at0005] occurrences matches {0..1} matches {*}    -- promis_scale_v12_global_health
-								}
-							}
+							ITEM_TREE[at0003] matches {*}    -- Tree
 						}
 					}
 				}
@@ -65,10 +61,6 @@ ontology
 				["at0003"] = <
 					text = <"Tree">
 					description = <"@ internal @">
-				>
-				["at0005"] = <
-					text = <"promis_scale_v12_global_health">
-					description = <"Die PROMIS-Skala v1.2 für globale Gesundheit.">
 				>
 			>
 		>
