@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"014f3f599fe4f311af5b6529851a7d0b">
+		["MD5-CAM-1.0.1"] = <"1746bf227abd497881b6192b95a52aa7">
 		["build_uid"] = <"37d0f84f-19aa-3ff2-95cd-8b6e57002357">
 	>
 
@@ -34,6 +34,11 @@ definition
 				value matches {
 					DV_TEXT matches {*}
 					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Zusatzangaben
+				value matches {
+					DV_TEXT matches {*}
 				}
 			}
 			CLUSTER[at0001] occurrences matches {0..*} matches {    -- Versuche
@@ -75,6 +80,10 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Ausfüllene Person">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Zusatzangaben">
 					description = <"">
 				>
 			>
