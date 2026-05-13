@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "19.0.0",
+      "sem_ver" : "20.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "056bf1370423a9f9e0385d9121d794f8",
+      "MD5-CAM-1.0.1" : "8937850e430593d9d8084ca9ea2d0f7d",
       "PARENT:MD5-CAM-1.0.1" : "3257667885c0afb9f4158927fd20590d"
     },
     "details" : {
@@ -227,6 +227,15 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-promis-001.v0",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.41",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-promis-002.v0",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -9321,7 +9330,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "C1FD027059D537CD37B69C9FC30EAA00"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zu Repräsentation jeder PROMIS-Messung.",
+          "keywords" : [ "PROMIS", "Messung", "Skala" ],
+          "use" : "Zur Aufzeichnung jeder PROMIS-Maßnahme verwenden.\r\n\r\nDieser Archetyp wurde entwickelt, um als Rahmen für die Erstellung von Templates für bestimmte PROMIS-Messungen, wie z.B. PROMIS-29 oder PROMIS-57, zu dienen. CLUSTER-Archetypen sollten für jede PROMIS-Fragenbank modelliert werden, die innerhalb dieses Archetyps eingeschränkt sind.\r\n\r\nAlle openEHR-Archetypen sind zwar unter einer offenen Lizenz frei verfügbar, der spezifische Inhalt dieses Archetyps ist jedoch urheberrechtlich geschützt. Jede Verwendung dieses Archetyps innerhalb von Implementierungen muss in Übereinstimmung mit den von den Urheberrechtsinhabern festgelegten Bedingungen erfolgen.\r\n\r\nErklärung zum Urheberrecht: PROMIS-Tests, Testprotokolle, Testaufgaben, Normen, Normtabellen, Bewertungsprogramme, Bewertungsschlüssel (einschließlich Bewertungsalgorithmen, Skalendefinitionen, Skalenzugehörigkeit und Bewertungsrichtungen), Bewertungsberichte, Software und andere PROMIS-bezogene Materialien sind ©2006-2017 PROMIS Gesundheitsorganisation oder andere Personen/Einrichtungen, die Informationen und Materialien beigetragen haben, und werden mit Genehmigung der Urheberrechtsinhaber verwendet.\r\n\r\nAllgemeine Nutzungsbedingungen: https://www.healthmeasures.net/images/PROMIS/Terms_of_Use_HM_approved_1-12-17_-_Updated_Copyright_Notices.pdf.",
+          "misuse" : "Nicht zur Repräsentation anderer Messung außer PROMIS zu verwenden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För att spela in eventuella PROMIS-mått.",
+          "keywords" : [ ],
+          "use" : "\r\nAnvänds för att spela in valfritt PROMIS-mått.\r\n\r\nDenna arketyp har utformats för att användas som ett ramverk för att konstruera mallar för specifika PROMIS-mått, till exempel PROMIS-29 eller PROMIS-57. CLUSTER-arketyper bör modelleras för varje PROMIS-frågebank, begränsad inom den här arketypen.\r\n\r\nMedan openEHR-arketyper alla är fritt tillgängliga under en öppen licens, är det specifika innehållet i denna arketyp upphovsrättsskyddat. All användning av denna arketyp inom implementeringar måste vara i enlighet med de villkor som fastställts av upphovsrättsinnehavarna.\r\n\r\nUpphovsrättsförklaring: PROMIS-tester, testprotokoll, testobjekt, normer, normtabeller, poängsättningsprogram, poängsättningsnycklar (inklusive poängsättningsalgoritmer, skaldefinitioner, skalmedlemskap och poängriktningar), poängrapporter, programvara och annat PROMIS-relaterat material är ©2006-2017 PROMIS Health Organization eller andra individer / enheter som har bidragit med information och material och används med tillstånd av upphovsrättsinnehavarna.\r\n\r\nAnvändarvillkor: https://www.healthmeasures.net/images/PROMIS/Terms_of_Use_HM_approved_1-12-17_-_Updated_Copyright_Notices.pdf",
+          "misuse" : "Får inte användas för att registrera andra mått än PROMIS.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record any PROMIS measure.",
+          "keywords" : [ ],
+          "use" : "Use to record any PROMIS measure.\r\n\r\nThis archetype has been designed to be used as a framework for constructing templates for specific PROMIS measures, such as PROMIS-29 or PROMIS-57. CLUSTER archetypes should be modeled for each PROMIS question bank, constrained within this archetype.\r\n\r\nWhile openEHR archetypes are all freely available under an open license, the specific content of this archetype is copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners.\r\n\r\nCopyright statement: PROMIS tests, test protocols, test items, norms, norms tables, scoring programs, scoring keys (including scoring algorithms, scale definitions, scale membership, and scoring directions), score reports, software, and other PROMIS-related materials are ©2006-2017 PROMIS Health Organization or other individuals/entities that have contributed information and materials, and are being used with the permission of the copyright holders.\r\n\r\nTerms and conditions for use: https://www.healthmeasures.net/images/PROMIS/Terms_of_Use_HM_approved_1-12-17_-_Updated_Copyright_Notices.pdf",
+          "misuse" : "Not to be used to record any measures other than PROMIS.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.promis.v0",
     "differential" : true,
@@ -9446,7 +9502,37 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "B3FBB5AFE060AD32CC2CEFD4FF814CD9"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Repräsentation der PROMIS-Skala v1.2 für globale Gesundheit.",
+          "keywords" : [ ],
+          "use" : "Zur Repräsentation der PROMIS-Skala v1.2 für globale Gesundheit.\r\n\r\nDieser Archetyp wurde für die Verwendung innerhalb des OBSERVATION.promis-Archetyps und zusammen mit anderen PROMIS-Bank-Archetypen entwickelt, die auf die Darstellung eines bestimmten PROMIS-Profils wie PROMIS-29 beschränkt sind.\r\n\r\nDer Archetyp ist bei der anfänglichen Modellierung unvollständig und sollte erweitert werden, wenn zusätzliche Artikel aus der entsprechenden Artikelbank benötigt werden.\r\n\r\nAlle openEHR-Archetypen sind zwar unter einer offenen Lizenz frei verfügbar, der spezifische Inhalt dieses Archetyps ist jedoch urheberrechtlich geschützt. Jede Verwendung dieses Archetyps innerhalb von Implementierungen muss in Übereinstimmung mit den von den Urheberrechtsinhabern festgelegten Bedingungen erfolgen.\r\n\r\nErklärung zum Urheberrecht: PROMIS-Tests, Testprotokolle, Testaufgaben, Normen, Normtabellen, Bewertungsprogramme, Bewertungsschlüssel (einschließlich Bewertungsalgorithmen, Skalendefinitionen, Skalenzugehörigkeit und Bewertungsrichtungen), Bewertungsberichte, Software und andere PROMIS-bezogene Materialien sind ©2006-2017 PROMIS Gesundheitsorganisation oder andere Personen/Einrichtungen, die Informationen und Materialien beigetragen haben, und werden mit Genehmigung der Urheberrechtsinhaber verwendet.\r\n\r\nAllgemeine Nutzungsbedingungen: https://www.healthmeasures.net/images/PROMIS/Terms_of_Use_HM_approved_1-12-17_-_Updated_Copyright_Notices.pdf.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record PROMIS scale v1.2 for global health.",
+          "keywords" : [ ],
+          "use" : "Use to record PROMIS scale v1.2 for global health.\r\n\r\nThis archetype has been designed to be used within the OBSERVATION.promis archetype, and along with other PROMIS bank archetypes constrained to represent a specific PROMIS profile such as PROMIS-29.\r\n\r\nThe archetype is incomplete at initial modelling, and should be grown as additional items from the relevant item bank are required.\r\n\r\nWhile openEHR archetypes are all freely available under an open license, the specific content of this archetype is copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners.\r\n\r\nCopyright statement: PROMIS tests, test protocols, test items, norms, norms tables, scoring programs, scoring keys (including scoring algorithms, scale definitions, scale membership, and scoring directions), score reports, software, and other PROMIS-related materials are ©2006-2017 PROMIS Health Organization or other individuals/entities that have contributed information and materials, and are being used with the permission of the copyright holders.\r\n\r\nTerms and conditions for use: https://www.healthmeasures.net/images/PROMIS/Terms_of_Use_HM_approved_1-12-17_-_Updated_Copyright_Notices.pdf",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -9565,6 +9651,935 @@
         "name" : "Sarah Ballout, Alina Rehberg",
         "organisation" : "Medizinische Hochschule Hannover",
         "email" : "ballout.sarah@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "de7778b1-4075-49c5-a59e-4e895aee4f13",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "C1FD027059D537CD37B69C9FC30EAA00"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.promis.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-promis-002.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "nodeId" : "at0002",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0007.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0004.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-promis_bank_v10_anxiety-001.v0",
+                      "referenceType" : "archetypeOverlay"
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0004.2",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-promis_bank_v10_depression-001.v0",
+                      "referenceType" : "archetypeOverlay"
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0004.3",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-promis_bank_v10_fatigue-001.v0",
+                      "referenceType" : "archetypeOverlay"
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0004.4",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-promis_bank_v10_sleep_disturbance-001.v0",
+                      "referenceType" : "archetypeOverlay"
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0004.5",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-promis_bank_v11_pain_interference-001.v0",
+                      "referenceType" : "archetypeOverlay"
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0004.6",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-promis_bank_v20_physical_function-001.v0",
+                      "referenceType" : "archetypeOverlay"
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0004.7",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-promis_bank_v20_ability_participate-001.v0",
+                      "referenceType" : "archetypeOverlay"
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "PROMIS (2)",
+            "description" : "Patient Reported Outcomes Measurement Information System®, a set of over 300 measures of physical, mental, and social health for use with the general population and with individuals living with chronic conditions."
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "PROMIS (2)",
+            "description" : "Patient Reported Outcomes Measurement Information System®, ein Satz von über 300 Messungen der physischen, psychischen und sozialen Gesundheit zur Verwendung in der Allgemeinbevölkerung und bei Personen mit chronischen Erkrankungen."
+          }
+        },
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "PROMIS (2)",
+            "description" : "Patient rapporterade resultat mätinformationssystem®, en uppsättning av över 300 mått på fysisk, psykisk och social hälsa för användning med den allmänna befolkningen och med individer som lever med kroniska tillstånd."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "73f44864-af55-4f5f-99d0-d1ba366d386f",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout",
+        "organisation" : "MHH-Hannover",
+        "email" : "ballout.sarah@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Elham Gholami",
+        "organisation" : "SLL",
+        "email" : "elham.gholami@sll.se"
+      },
+      "accreditation" : "Ackreditering",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "ff9cf573-cde5-4c3b-a0f1-dc9627b0771b",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "90E91187F14A004004B721CEBD23B2CF"
+      },
+      "details" : { }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/items[at0009]" : {
+            "item_code" : "EDANX53"
+          },
+          "/items[at0001]" : {
+            "item_code" : "EDANX01"
+          },
+          "/items[at0008]" : {
+            "item_code" : "EDANX41"
+          },
+          "/items[at0007]" : {
+            "item_code" : "EDANX40"
+          }
+        },
+        "de" : {
+          "/items[at0009]" : {
+            "item_code" : "EDANX53"
+          },
+          "/items[at0001]" : {
+            "item_code" : "EDANX01"
+          },
+          "/items[at0008]" : {
+            "item_code" : "EDANX41"
+          },
+          "/items[at0007]" : {
+            "item_code" : "EDANX40"
+          }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.promis_bank_v10_anxiety.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-promis_bank_v10_anxiety-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "4932b659-77d1-47ce-97f1-d1359d394887",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout",
+        "organisation" : "MHH-Hannover",
+        "email" : "ballout.sarah@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "99a003ba-21f6-4b20-b5ef-14050b552fa6",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "22AACC5195FC2D1F974D3655DF1A0A10"
+      },
+      "details" : { }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/items[at0009]" : {
+            "item_code" : "EDDEP41"
+          },
+          "/items[at0001]" : {
+            "item_code" : "EDDEP04"
+          },
+          "/items[at0008]" : {
+            "item_code" : "EDDEP29"
+          },
+          "/items[at0007]" : {
+            "item_code" : "EDDEP06"
+          }
+        },
+        "de" : {
+          "/items[at0009]" : {
+            "item_code" : "EDDEP41"
+          },
+          "/items[at0001]" : {
+            "item_code" : "EDDEP04"
+          },
+          "/items[at0008]" : {
+            "item_code" : "EDDEP29"
+          },
+          "/items[at0007]" : {
+            "item_code" : "EDDEP06"
+          }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.promis_bank_v10_depression.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-promis_bank_v10_depression-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "15d9bd8d-7a8a-4ce2-a364-f41d74f694ef",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout, Alina Rehberg",
+        "organisation" : "MHH-Hannover, Medizinische Hochschule Hannover",
+        "email" : "ballout.sarah@mh-hannover.de, rehberg.alina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "8d4c8288-38f7-4109-873a-86af36bc10bf",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "6A98247C977EC343B7F6FCA61C23E51C"
+      },
+      "details" : { }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/items[at0009]" : {
+            "item_code" : "FATEXP40"
+          },
+          "/items[at0001]" : {
+            "item_code" : "HI7"
+          },
+          "/items[at0008]" : {
+            "item_code" : "FATEXP41"
+          },
+          "/items[at0007]" : {
+            "item_code" : "AN3"
+          }
+        },
+        "de" : {
+          "/items[at0009]" : {
+            "item_code" : "FATEXP40"
+          },
+          "/items[at0001]" : {
+            "item_code" : "HI7"
+          },
+          "/items[at0008]" : {
+            "item_code" : "FATEXP41"
+          },
+          "/items[at0007]" : {
+            "item_code" : "AN3"
+          }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.promis_bank_v10_fatigue.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-promis_bank_v10_fatigue-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "01b2a35b-2ac9-4b9b-9487-59b6ab7ed319",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout",
+        "organisation" : "MHH-Hannover",
+        "email" : "ballout.sarah@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "d034d329-4e2b-4f3a-86a1-e303d13516a7",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "56808CEE10475330A79D5703D758E03A"
+      },
+      "details" : { }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/items[at0009]" : {
+            "item_code" : "Sleep44"
+          },
+          "/items[at0001]" : {
+            "item_code" : "Sleep116"
+          },
+          "/items[at0008]" : {
+            "item_code" : "Sleep20"
+          },
+          "/items[at0007]" : {
+            "item_code" : "Sleep109"
+          }
+        },
+        "de" : {
+          "/items[at0009]" : {
+            "item_code" : "Sleep44"
+          },
+          "/items[at0001]" : {
+            "item_code" : "Sleep116"
+          },
+          "/items[at0008]" : {
+            "item_code" : "Sleep20"
+          },
+          "/items[at0007]" : {
+            "item_code" : "Sleep109"
+          }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.promis_bank_v10_sleep_disturbance.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-promis_bank_v10_sleep_disturbance-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "934749db-0585-4bb0-b333-9e4b35eff557",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout, Alina Rehberg",
+        "organisation" : "MHH-Hannover, Medizinische Hochschule Hannover",
+        "email" : "ballout.sarah@mh-hannover.de, rehberg.alina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "5f5c798f-e3fd-4c09-bc6e-07d709d3d1e9",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "EA9CA835BDD32FC2CC657D3338A3D552"
+      },
+      "details" : { }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/items[at0009]" : {
+            "item_code" : "PAININ34"
+          },
+          "/items[at0001]" : {
+            "item_code" : "PAININ9"
+          },
+          "/items[at0008]" : {
+            "item_code" : "PAININ31"
+          },
+          "/items[at0007]" : {
+            "item_code" : "PAININ22"
+          }
+        },
+        "de" : {
+          "/items[at0009]" : {
+            "item_code" : "PAININ34"
+          },
+          "/items[at0001]" : {
+            "item_code" : "PAININ9"
+          },
+          "/items[at0008]" : {
+            "item_code" : "PAININ31"
+          },
+          "/items[at0007]" : {
+            "item_code" : "PAININ22"
+          }
+        },
+        "sv" : {
+          "/items[at0009]" : {
+            "item_code" : "PAININ34"
+          },
+          "/items[at0001]" : {
+            "item_code" : "PAININ9"
+          },
+          "/items[at0008]" : {
+            "item_code" : "PAININ31"
+          },
+          "/items[at0007]" : {
+            "item_code" : "PAININ22"
+          }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.promis_bank_v11_pain_interference.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-promis_bank_v11_pain_interference-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "de" : { },
+        "sv" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "8276ce7a-6678-44cf-b83f-e002cf08a418",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout, Alina Rehberg",
+        "organisation" : "MHH-Hannover, Medizinische Hochschule Hannover",
+        "email" : "ballout.sarah@mh-hannover.de, rehberg.alina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Elham Gholami",
+        "organisation" : "SLL",
+        "email" : "elham.gholami@sll.se"
+      },
+      "accreditation" : "Ackreditering",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "0b8c46d6-fdc7-4335-a2da-c65044579c3d",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "C8026CF5EEC8C34B860BBEF71A5FE553"
+      },
+      "details" : { }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/items[at0009]" : {
+            "item_code" : "PFA53"
+          },
+          "/items[at0001]" : {
+            "item_code" : "PFA11"
+          },
+          "/items[at0008]" : {
+            "item_code" : "PFA23"
+          },
+          "/items[at0007]" : {
+            "item_code" : "PFA21"
+          }
+        },
+        "de" : {
+          "/items[at0009]" : {
+            "item_code" : "PFA53"
+          },
+          "/items[at0001]" : {
+            "item_code" : "PFA11"
+          },
+          "/items[at0008]" : {
+            "item_code" : "PFA23"
+          },
+          "/items[at0007]" : {
+            "item_code" : "PFA21"
+          }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.promis_bank_v20_physical_function.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-promis_bank_v20_physical_function-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "2c0f8bb6-4bdc-4dec-9d91-6bb01ccb8c72",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout, Alina Rehberg",
+        "organisation" : "MHH-Hannover, Medizinische Hochschule Hannover",
+        "email" : "ballout.sarah@mh-hannover.de, rehberg.alina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "fb4074fd-df2c-4422-b389-294714c010a7",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "07F37D9C8F629CB73F80235DBD26EEF4"
+      },
+      "details" : { }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/items[at0009]" : {
+            "item_code" : "SRPPER46 _CaPS"
+          },
+          "/items[at0001]" : {
+            "item_code" : "SRPPER11 _CaPS"
+          },
+          "/items[at0008]" : {
+            "item_code" : "SRPPER23 _CaPS"
+          },
+          "/items[at0007]" : {
+            "item_code" : "SRPPER18 _CaPS"
+          }
+        },
+        "de" : {
+          "/items[at0009]" : {
+            "item_code" : "SRPPER46 _CaPS"
+          },
+          "/items[at0001]" : {
+            "item_code" : "SRPPER11 _CaPS"
+          },
+          "/items[at0008]" : {
+            "item_code" : "SRPPER23 _CaPS"
+          },
+          "/items[at0007]" : {
+            "item_code" : "SRPPER18 _CaPS"
+          }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.promis_bank_v20_ability_participate.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-promis_bank_v20_ability_participate-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "55083024-2f58-4c59-b767-fc02147534ba",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout, Alina Rehberg",
+        "organisation" : "MHH-Hannover, Medizinische Hochschule Hannover",
+        "email" : "ballout.sarah@mh-hannover.de, rehberg.alina@mh-hannover.de"
       },
       "otherDetails" : { }
     } ]
