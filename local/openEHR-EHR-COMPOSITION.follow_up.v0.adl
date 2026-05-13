@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3257667885c0afb9f4158927fd20590d">
+		["MD5-CAM-1.0.1"] = <"f1025a1a3995eb20fb644f9f8108395f">
 		["build_uid"] = <"f882e434-8fee-3a9b-a0c7-c48370ee37b6">
 	>
 
@@ -41,24 +41,6 @@ definition
 				other_context matches {
 					ITEM_TREE[at0001] matches {    -- Item tree
 						items cardinality matches {0..*; unordered} matches {
-							ELEMENT[at0002] occurrences matches {0..1} matches {    -- Ausfüllende Person
-								value matches {
-									DV_CODED_TEXT matches {
-										defining_code matches {
-											[local::
-											at0010,    -- Patient/Patientin
-											at0011,    -- Angehöriger/Angehörige
-											at0012,    -- Arzt/Ärztin
-											at0013]    -- Andere Person
-										}
-									}
-								}
-							}
-							ELEMENT[at0007] occurrences matches {0..1} matches {    -- Ausfüllende Person (bitte spezifizieren)
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
 							allow_archetype CLUSTER[at0018] occurrences matches {0..*} matches {    -- Zusätzliche Angaben
 								include
 									archetype_id/value matches {/.*/}
@@ -81,30 +63,6 @@ ontology
 				["at0001"] = <
 					text = <"Item tree">
 					description = <"@ internal @">
-				>
-				["at0002"] = <
-					text = <"Ausfüllende Person">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"Ausfüllende Person (bitte spezifizieren)">
-					description = <"">
-				>
-				["at0010"] = <
-					text = <"Patient/Patientin">
-					description = <"">
-				>
-				["at0011"] = <
-					text = <"Angehöriger/Angehörige">
-					description = <"">
-				>
-				["at0012"] = <
-					text = <"Arzt/Ärztin">
-					description = <"">
-				>
-				["at0013"] = <
-					text = <"Andere Person">
-					description = <"">
 				>
 				["at0018"] = <
 					text = <"Zusätzliche Angaben">
