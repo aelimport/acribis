@@ -23,25 +23,15 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ff372f5ccda8f1812af3d20aec8f69cc">
+		["MD5-CAM-1.0.1"] = <"9baf3ac8a8730f37ac548f14950689bc">
 		["build_uid"] = <"37d0f84f-19aa-3ff2-95cd-8b6e57002357">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Kontaktaufnahme
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Ausführende Person
-				value matches {
-					DV_TEXT matches {*}
-					DV_CODED_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Kontaktperson
-				value matches {
-					DV_CODED_TEXT matches {*}
-					DV_TEXT matches {*}
-				}
-			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {*}    -- Ausführende Person
+			ELEMENT[at0009] occurrences matches {0..1} matches {*}    -- Kontaktperson
 			ELEMENT[at0006] occurrences matches {0..1} matches {*}    -- Zusatzangaben
 			CLUSTER[at0001] occurrences matches {0..*} matches {    -- Versuche
 				items cardinality matches {1..*; unordered} matches {
