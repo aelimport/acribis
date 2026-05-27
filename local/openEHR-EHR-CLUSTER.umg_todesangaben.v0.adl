@@ -32,7 +32,7 @@ Nicht zur Darstellung von Fehlgeburten oder Schwangerschaftsabbrüchen verwenden
 		["original_namespace"] = <"org.highmed">
 		["original_publisher"] = <"HiGHmed">
 		["custodian_namespace"] = <"org.highmed">
-		["MD5-CAM-1.0.1"] = <"1ED7EB22231E22AAB8E6CD28C6E70012">
+		["MD5-CAM-1.0.1"] = <"a9ed73f4125f705d9759db5cb7e3351e">
 		["build_uid"] = <"0b0bd598-c99f-46a5-bbb6-aacce7a7e4f7">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -71,6 +71,7 @@ definition
 			}
 			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Patient verstorben
 				value matches {
+					DV_CODED_TEXT matches {*}
 					DV_BOOLEAN matches {*}
 				}
 			}
