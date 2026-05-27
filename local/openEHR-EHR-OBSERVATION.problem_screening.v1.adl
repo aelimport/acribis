@@ -291,7 +291,7 @@ No utilizar para registrar detalles sobre una lista de selección simple en la q
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"672e5ea1045efffa03d689087eeff7b4">
+		["MD5-CAM-1.0.1"] = <"67c5a55868d6b5d419fa8a0d9c91db34">
 		["build_uid"] = <"557e192f-550a-4d2f-af4c-37d5116c3cad">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"1.0.8">
@@ -360,6 +360,7 @@ definition
 													DV_DURATION matches {*}
 													DV_DATE_TIME matches {*}
 													DV_INTERVAL<DV_DATE_TIME> matches {*}
+													DV_DATE matches {*}
 												}
 											}
 											allow_archetype CLUSTER[at0039] occurrences matches {0..*} matches {    -- Additional details
