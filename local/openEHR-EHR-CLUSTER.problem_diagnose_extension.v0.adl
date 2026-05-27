@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"19b4ed5600c23a5368bff16e3d13389b">
+		["MD5-CAM-1.0.1"] = <"27e637d4468072d4168893a445a9c654">
 		["build_uid"] = <"f83db2b0-16ba-3153-86d0-f6d6ec52e97b">
 	>
 
@@ -55,6 +55,7 @@ definition
 					ELEMENT[at0013] matches {    -- Name des Problems/ der Diagnose
 						value matches {
 							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Vorhanden?
