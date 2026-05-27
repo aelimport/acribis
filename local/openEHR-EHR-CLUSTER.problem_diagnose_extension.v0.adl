@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9cbce42984e6518675be3229c490d404">
+		["MD5-CAM-1.0.1"] = <"19b4ed5600c23a5368bff16e3d13389b">
 		["build_uid"] = <"f83db2b0-16ba-3153-86d0-f6d6ec52e97b">
 	>
 
@@ -38,7 +38,7 @@ definition
 							at0024,    -- Ja
 							at0025,    -- Nein
 							at0026,    -- Unbekannt
-							at0027]    -- *Unsure (en)
+							at0027]    -- Nicht erhoben
 						}
 					}
 					DV_TEXT matches {*}
@@ -173,7 +173,7 @@ ontology
 					description = <"">
 				>
 				["at0027"] = <
-					text = <"*Unsure (en)">
+					text = <"Nicht erhoben">
 					description = <"">
 				>
 				["at0028"] = <
