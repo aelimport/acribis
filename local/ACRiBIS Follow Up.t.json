@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "8.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d3d6dda13e595ca2cd4ff7000b72d5ce",
+      "MD5-CAM-1.0.1" : "33bc3dd2e60965f648543756c51c8be2",
       "PARENT:MD5-CAM-1.0.1" : "b59d689cd1da6a23c461894d7a89d3fc"
     },
     "details" : {
@@ -544,6 +544,11 @@
                             }, {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE",
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
@@ -1257,6 +1262,11 @@
                             }, {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE",
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
@@ -2211,7 +2221,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
+        "PARENT:MD5-CAM-1.0.1" : "b4720ab19e495a3e96a85550d8b7f32f"
       },
       "details" : {
         "de" : {
@@ -2238,7 +2248,51 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0019.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DURATION",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -2275,7 +2329,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
+        "PARENT:MD5-CAM-1.0.1" : "b4720ab19e495a3e96a85550d8b7f32f"
       },
       "details" : {
         "de" : {
@@ -2339,7 +2393,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
+        "PARENT:MD5-CAM-1.0.1" : "b4720ab19e495a3e96a85550d8b7f32f"
       },
       "details" : {
         "de" : {
@@ -3024,7 +3078,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
+        "PARENT:MD5-CAM-1.0.1" : "b4720ab19e495a3e96a85550d8b7f32f"
       },
       "details" : {
         "de" : {
@@ -3709,7 +3763,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
+        "PARENT:MD5-CAM-1.0.1" : "b4720ab19e495a3e96a85550d8b7f32f"
       },
       "details" : {
         "de" : {
@@ -4394,7 +4448,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
+        "PARENT:MD5-CAM-1.0.1" : "b4720ab19e495a3e96a85550d8b7f32f"
       },
       "details" : {
         "de" : {
@@ -5127,7 +5181,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
+        "PARENT:MD5-CAM-1.0.1" : "b4720ab19e495a3e96a85550d8b7f32f"
       },
       "details" : {
         "de" : {
@@ -5788,7 +5842,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
+        "PARENT:MD5-CAM-1.0.1" : "b4720ab19e495a3e96a85550d8b7f32f"
       },
       "details" : {
         "de" : {
@@ -6449,7 +6503,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
+        "PARENT:MD5-CAM-1.0.1" : "b4720ab19e495a3e96a85550d8b7f32f"
       },
       "details" : {
         "de" : {
@@ -7110,7 +7164,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
+        "PARENT:MD5-CAM-1.0.1" : "b4720ab19e495a3e96a85550d8b7f32f"
       },
       "details" : {
         "de" : {
@@ -8980,7 +9034,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
+        "PARENT:MD5-CAM-1.0.1" : "b4720ab19e495a3e96a85550d8b7f32f"
       },
       "details" : {
         "de" : {
@@ -9259,7 +9313,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
+        "PARENT:MD5-CAM-1.0.1" : "b4720ab19e495a3e96a85550d8b7f32f"
       },
       "details" : {
         "de" : {
@@ -9397,7 +9451,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
+        "PARENT:MD5-CAM-1.0.1" : "b4720ab19e495a3e96a85550d8b7f32f"
       },
       "details" : {
         "de" : {
