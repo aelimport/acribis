@@ -32,14 +32,21 @@ Nicht zur Darstellung von Fehlgeburten oder Schwangerschaftsabbrüchen verwenden
 		["original_namespace"] = <"org.highmed">
 		["original_publisher"] = <"HiGHmed">
 		["custodian_namespace"] = <"org.highmed">
-		["MD5-CAM-1.0.1"] = <"a9ed73f4125f705d9759db5cb7e3351e">
+		["MD5-CAM-1.0.1"] = <"7a1a9d4b53ecd8b0e8d253f7fb2004ee">
 		["build_uid"] = <"0b0bd598-c99f-46a5-bbb6-aacce7a7e4f7">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- UMG_Todesangaben
+	CLUSTER[at0000] matches {    -- Todesangaben
 		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Status
+				value matches {
+					DV_CODED_TEXT matches {*}
+					DV_BOOLEAN matches {*}
+					DV_TEXT matches {*}
+				}
+			}
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Sterbedatum
 				value matches {
 					DV_DATE_TIME matches {*}
@@ -69,12 +76,6 @@ definition
 					DV_DATE_TIME matches {*}
 				}
 			}
-			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Patient verstorben
-				value matches {
-					DV_CODED_TEXT matches {*}
-					DV_BOOLEAN matches {*}
-				}
-			}
 		}
 	}
 
@@ -83,7 +84,7 @@ ontology
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"UMG_Todesangaben">
+					text = <"Todesangaben">
 					description = <"Angaben über den Tod einer Person, die mit übergeordneten Datenelementen für die Registrierung übereinstimmen zB. Sterberegister. ">
 				>
 				["at0001"] = <
@@ -112,7 +113,7 @@ ontology
 					description = <"*">
 				>
 				["at0007"] = <
-					text = <"Patient verstorben">
+					text = <"Status">
 					description = <"Angabe ob der Patient verstorben ist oder nicht. ">
 				>
 			>
