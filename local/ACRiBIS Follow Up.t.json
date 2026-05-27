@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.2.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "08aba309cbd4c33b9c61b04ea84f7b82",
+      "MD5-CAM-1.0.1" : "dbb54fed281c9c7f9a2af0961ce4f595",
       "PARENT:MD5-CAM-1.0.1" : "b59d689cd1da6a23c461894d7a89d3fc"
     },
     "details" : {
@@ -2211,7 +2211,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9cbce42984e6518675be3229c490d404"
+        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
       },
       "details" : {
         "de" : {
@@ -2275,7 +2275,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9cbce42984e6518675be3229c490d404"
+        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
       },
       "details" : {
         "de" : {
@@ -2339,7 +2339,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9cbce42984e6518675be3229c490d404"
+        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
       },
       "details" : {
         "de" : {
@@ -3024,7 +3024,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9cbce42984e6518675be3229c490d404"
+        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
       },
       "details" : {
         "de" : {
@@ -3709,7 +3709,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9cbce42984e6518675be3229c490d404"
+        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
       },
       "details" : {
         "de" : {
@@ -4394,7 +4394,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9cbce42984e6518675be3229c490d404"
+        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
       },
       "details" : {
         "de" : {
@@ -5127,7 +5127,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9cbce42984e6518675be3229c490d404"
+        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
       },
       "details" : {
         "de" : {
@@ -5788,7 +5788,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9cbce42984e6518675be3229c490d404"
+        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
       },
       "details" : {
         "de" : {
@@ -6449,7 +6449,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9cbce42984e6518675be3229c490d404"
+        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
       },
       "details" : {
         "de" : {
@@ -7110,7 +7110,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9cbce42984e6518675be3229c490d404"
+        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
       },
       "details" : {
         "de" : {
@@ -8980,7 +8980,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9cbce42984e6518675be3229c490d404"
+        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
       },
       "details" : {
         "de" : {
@@ -9049,22 +9049,10 @@
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0012",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..*",
-              "nodeId" : "at0020.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-problem_diagnose_extension-009.v0",
-              "referenceType" : "archetypeOverlay"
-            } ]
-          } ],
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0028.1",
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         } ]
       } ],
@@ -9100,6 +9088,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
           "members" : [ ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0015", "at0016", "at0017", "at0018" ]
         }
       }
     },
@@ -9127,7 +9120,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9cbce42984e6518675be3229c490d404"
+        "PARENT:MD5-CAM-1.0.1" : "9a04c5c744c5bab1faee6b361f23d86b"
       },
       "details" : {
         "de" : {
@@ -9203,52 +9196,6 @@
           "nodeId" : "at0028.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0012.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0019.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DURATION",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -9279,6 +9226,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.1",
           "members" : [ "at0024", "at0025", "at0026", "at0027" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0015", "at0016", "at0017", "at0018" ]
         }
       }
     },
