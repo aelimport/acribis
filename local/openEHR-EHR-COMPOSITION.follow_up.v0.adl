@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f1025a1a3995eb20fb644f9f8108395f">
+		["MD5-CAM-1.0.1"] = <"b59d689cd1da6a23c461894d7a89d3fc">
 		["build_uid"] = <"f882e434-8fee-3a9b-a0c7-c48370ee37b6">
 	>
 
@@ -41,6 +41,16 @@ definition
 				other_context matches {
 					ITEM_TREE[at0001] matches {    -- Item tree
 						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0019] occurrences matches {0..1} matches {    -- Probanden ID
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0020] occurrences matches {0..1} matches {    -- Ausfgefüllt von
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
 							allow_archetype CLUSTER[at0018] occurrences matches {0..*} matches {    -- Zusätzliche Angaben
 								include
 									archetype_id/value matches {/.*/}
@@ -66,6 +76,14 @@ ontology
 				>
 				["at0018"] = <
 					text = <"Zusätzliche Angaben">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Probanden ID">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Ausfgefüllt von">
 					description = <"">
 				>
 			>
