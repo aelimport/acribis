@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9a04c5c744c5bab1faee6b361f23d86b">
+		["MD5-CAM-1.0.1"] = <"b4720ab19e495a3e96a85550d8b7f32f">
 		["build_uid"] = <"f83db2b0-16ba-3153-86d0-f6d6ec52e97b">
 	>
 
@@ -78,6 +78,7 @@ definition
 					DV_DURATION matches {*}
 					DV_DATE_TIME matches {*}
 					DV_INTERVAL<DV_DATE_TIME> matches {*}
+					DV_DATE matches {*}
 				}
 			}
 			allow_archetype CLUSTER[at0029] occurrences matches {0..*} matches {    -- Zusätzliche Angaben
