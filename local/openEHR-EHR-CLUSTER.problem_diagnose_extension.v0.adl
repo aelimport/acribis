@@ -23,13 +23,37 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"dcf004beb275caac74f453d5a7b6fb8a">
+		["MD5-CAM-1.0.1"] = <"fd08de34d120bb7ce716db2ab2bfa76c">
 		["build_uid"] = <"f83db2b0-16ba-3153-86d0-f6d6ec52e97b">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Erweiterte Angaben zu dem Problem/Diagnose Screening
 		items cardinality matches {1..*; unordered} matches {
+			allow_archetype CLUSTER[at0022] occurrences matches {0..*} matches {    -- Zusätzliche Angaben
+				include
+					archetype_id/value matches {/.*/}
+			}
+			ELEMENT[at0023] occurrences matches {0..1} matches {    -- Irgendwelche Probleme oder Diagnosen?
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0024,    -- Ja
+							at0025,    -- Nein
+							at0026,    -- Unbekannt
+							at0027]    -- *Unsure (en)
+						}
+					}
+					DV_TEXT matches {*}
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0028] occurrences matches {0..1} matches {    -- Beschreibung
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
 			CLUSTER[at0012] occurrences matches {0..1} matches {    -- Bestimmter Zustand
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0013] matches {    -- Name des Problems/ der Diagnose
@@ -71,10 +95,6 @@ definition
 						}
 					}
 				}
-			}
-			allow_archetype CLUSTER[at0022] occurrences matches {0..*} matches {    -- Zusätzliche Angaben
-				include
-					archetype_id/value matches {/.*/}
 			}
 		}
 	}
@@ -134,6 +154,31 @@ ontology
 				["at0022"] = <
 					text = <"Zusätzliche Angaben">
 					description = <"">
+				>
+				["at0023"] = <
+					text = <"Irgendwelche Probleme oder Diagnosen?">
+					description = <"Gibt es eine Vorgeschichte an Beschwerden, Problemen oder Diagnosen im Zusammenhang mit dem Screening-Zweck?">
+					comment = <"In einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen.">
+				>
+				["at0024"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Nein">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Unbekannt">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"*Unsure (en)">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Beschreibung">
+					description = <"Beschreibung der Geschichte von Beschwerden, Problemen oder Diagnosen, die für das Screening relevant sind.">
 				>
 			>
 		>
