@@ -31,7 +31,7 @@ Dieser CLUSTER-Archetype kann beispielsweise innerhalb des Archetyps OBSERVATION
 		["original_namespace"] = <"org.highmed">
 		["original_publisher"] = <"HiGHmed">
 		["custodian_namespace"] = <"org.highmed">
-		["MD5-CAM-1.0.1"] = <"9FFE74C18D706649A5A3E239E69D232D">
+		["MD5-CAM-1.0.1"] = <"553ff7dbeabe7d6373b6599155c64ef9">
 		["build_uid"] = <"474e8ec6-304f-43c2-9739-987bf2ad8341">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -48,6 +48,14 @@ definition
 							at0009]    -- Ambulant
 						}
 					}
+				}
+			}
+			ELEMENT[at0014] occurrences matches {0..1} matches {    -- Aufenthaltszeitpunkt
+				value matches {
+					DV_DATE_TIME matches {*}
+					DV_INTERVAL<DV_DATE_TIME> matches {*}
+					DV_DURATION matches {*}
+					DV_INTERVAL<DV_DATE> matches {*}
 				}
 			}
 			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Beginn
@@ -144,6 +152,10 @@ ontology
 				["at0013"] = <
 					text = <"Details zum Grund">
 					description = <"Hier können weitere Details zum Grund für den Krankenhausaufenthalt des Patienten angegeben werden, die nicht bereits mit dem Element Grund erfasst wurden.">
+				>
+				["at0014"] = <
+					text = <"Aufenthaltszeitpunkt">
+					description = <"">
 				>
 			>
 		>
