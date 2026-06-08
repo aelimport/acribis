@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "22.0.0",
+      "sem_ver" : "23.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5efd4fa8eed9c143a48baf2a0666bbb7",
+      "MD5-CAM-1.0.1" : "7faf9a05bcd33dda901331736b7ec451",
       "PARENT:MD5-CAM-1.0.1" : "b59d689cd1da6a23c461894d7a89d3fc"
     },
     "details" : {
@@ -2862,6 +2862,11 @@
                             }, {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE",
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
