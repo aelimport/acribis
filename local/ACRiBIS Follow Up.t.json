@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "16.0.1",
+      "sem_ver" : "17.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "970669a70584356de31fdb461afc8605",
+      "MD5-CAM-1.0.1" : "0e2fe998229300ca971383f697a2e19d",
       "PARENT:MD5-CAM-1.0.1" : "b59d689cd1da6a23c461894d7a89d3fc"
     },
     "details" : {
@@ -8471,7 +8471,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9baf3ac8a8730f37ac548f14950689bc"
+        "PARENT:MD5-CAM-1.0.1" : "d64fd1f20043061683831623b96cd875"
       },
       "details" : {
         "de" : {
@@ -8594,6 +8594,51 @@
                     "terminologyId" : "kontaktperson",
                     "code" : "3",
                     "value" : "Arzt"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0010.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "art_der_kontaktaufnahme"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "art_der_kontaktaufnahme" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "art_der_kontaktaufnahme",
+                    "code" : "1",
+                    "value" : "E-Mail"
+                  }, {
+                    "terminologyId" : "art_der_kontaktaufnahme",
+                    "code" : "2",
+                    "value" : "Postalisch"
+                  }, {
+                    "terminologyId" : "art_der_kontaktaufnahme",
+                    "code" : "3",
+                    "value" : "Telefonisch"
+                  }, {
+                    "terminologyId" : "art_der_kontaktaufnahme",
+                    "code" : "4",
+                    "value" : "Unbekannt"
                   } ]
                 } ]
               } ],
