@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9baf3ac8a8730f37ac548f14950689bc">
+		["MD5-CAM-1.0.1"] = <"d64fd1f20043061683831623b96cd875">
 		["build_uid"] = <"37d0f84f-19aa-3ff2-95cd-8b6e57002357">
 	>
 
@@ -33,6 +33,12 @@ definition
 			ELEMENT[at0008] occurrences matches {0..1} matches {*}    -- Ausführende Person
 			ELEMENT[at0009] occurrences matches {0..1} matches {*}    -- Kontaktperson
 			ELEMENT[at0006] occurrences matches {0..1} matches {*}    -- Zusatzangaben
+			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Details zur Art der Kontaktaufnahme
+				value matches {
+					DV_CODED_TEXT matches {*}
+					DV_TEXT matches {*}
+				}
+			}
 			CLUSTER[at0001] occurrences matches {0..*} matches {    -- Versuche
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Erfolgreich
@@ -80,6 +86,10 @@ ontology
 				>
 				["at0009"] = <
 					text = <"Kontaktperson">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Details zur Art der Kontaktaufnahme">
 					description = <"">
 				>
 			>
