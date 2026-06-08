@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "21.0.0",
+      "sem_ver" : "22.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "080895af9062f36afe9c982f71664b51",
+      "MD5-CAM-1.0.1" : "5efd4fa8eed9c143a48baf2a0666bbb7",
       "PARENT:MD5-CAM-1.0.1" : "b59d689cd1da6a23c461894d7a89d3fc"
     },
     "details" : {
@@ -8335,11 +8335,6 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -8404,28 +8399,28 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "todesursache_kardio"
+                    "value" : "todesursache_herz_kreislauf"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "todesursache_kardio" ],
+                  "selectedTerminologies" : [ "todesursache_herz_kreislauf" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "todesursache_kardio",
+                    "terminologyId" : "todesursache_herz_kreislauf",
                     "code" : "1",
                     "value" : "Herzinfarkt"
                   }, {
-                    "terminologyId" : "todesursache_kardio",
+                    "terminologyId" : "todesursache_herz_kreislauf",
                     "code" : "2",
                     "value" : "Schlaganfall durch Gefässverschluss"
                   }, {
-                    "terminologyId" : "todesursache_kardio",
+                    "terminologyId" : "todesursache_herz_kreislauf",
                     "code" : "3",
                     "value" : "Hirnblutung (interzerebral oder subarachnoidal)"
                   }, {
-                    "terminologyId" : "todesursache_kardio",
+                    "terminologyId" : "todesursache_herz_kreislauf",
                     "code" : "4",
                     "value" : "Andere Herz-Kreislauf bedingte Ursache"
                   }, {
-                    "terminologyId" : "todesursache_kardio",
+                    "terminologyId" : "todesursache_herz_kreislauf",
                     "code" : "5",
                     "value" : "Unbekannt"
                   } ]
