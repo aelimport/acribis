@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "31.0.0",
+      "sem_ver" : "32.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f5b305480e4594aead13186f9fc9c6f4",
+      "MD5-CAM-1.0.1" : "3744b58f80d39c37e08e8c2899fbc06b",
       "PARENT:MD5-CAM-1.0.1" : "b59d689cd1da6a23c461894d7a89d3fc"
     },
     "details" : {
@@ -4090,11 +4090,11 @@
                                   "selectedTerminologies" : [ "pfa" ],
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "pfa",
-                                    "code" : "1",
+                                    "code" : "5",
                                     "value" : "Ohne jede Schwierigkeiten"
                                   }, {
                                     "terminologyId" : "pfa",
-                                    "code" : "2",
+                                    "code" : "4",
                                     "value" : "Mit geringen Schwierigkeiten"
                                   }, {
                                     "terminologyId" : "pfa",
@@ -4102,11 +4102,11 @@
                                     "value" : "Mit einigen Schwierigkeiten"
                                   }, {
                                     "terminologyId" : "pfa",
-                                    "code" : "4",
+                                    "code" : "2",
                                     "value" : "Mit großen Schwierigkeiten"
                                   }, {
                                     "terminologyId" : "pfa",
-                                    "code" : "5",
+                                    "code" : "1",
                                     "value" : "Kann ich gar nicht"
                                   } ]
                                 } ]
