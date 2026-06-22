@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "35.0.0",
+      "sem_ver" : "36.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "41d11ba660454162cac8219eaa30a9df",
+      "MD5-CAM-1.0.1" : "113072de25d6c39e7ba80e398f21cffb",
       "PARENT:MD5-CAM-1.0.1" : "b59d689cd1da6a23c461894d7a89d3fc"
     },
     "details" : {
@@ -8719,8 +8719,48 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_QUANTITY",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "property",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "openehr"
+                                  },
+                                  "constraint" : [ "381" ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ {
+                                "@type" : "C_ATTRIBUTE_TUPLE",
+                                "members" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "units",
+                                  "children" : [ ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "magnitude",
+                                  "children" : [ ]
+                                } ],
+                                "tuples" : [ {
+                                  "@type" : "C_PRIMITIVE_TUPLE",
+                                  "members" : [ {
+                                    "@type" : "C_STRING",
+                                    "rmTypeName" : "STRING",
+                                    "constraint" : [ "eq" ]
+                                  }, {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "constraint" : [ {
+                                      "lowerIncluded" : false,
+                                      "upperIncluded" : false,
+                                      "lowerUnbounded" : true,
+                                      "upperUnbounded" : true
+                                    } ]
+                                  } ]
+                                } ]
+                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -8750,6 +8790,12 @@
             "code" : "at0000.1",
             "text" : "Gesundheitszustand",
             "description" : "self_reported_data"
+          },
+          "eq" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "Punkte",
+            "description" : "Eq",
+            "code" : "eq"
           }
         }
       },
