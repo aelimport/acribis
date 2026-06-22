@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "37.0.0",
+      "sem_ver" : "38.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c8ff90f7ccbd885ffbd4d44259238b04",
+      "MD5-CAM-1.0.1" : "8650a604fe713fb6e10719bbc6c767bb",
       "PARENT:MD5-CAM-1.0.1" : "b59d689cd1da6a23c461894d7a89d3fc"
     },
     "details" : {
@@ -3998,7 +3998,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "99e04e866fddd7591421933d6606e345"
+        "PARENT:MD5-CAM-1.0.1" : "e3b7658d9cf2e5151d5744f19abe366e"
       },
       "details" : {
         "de" : {
@@ -8651,7 +8651,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "99e04e866fddd7591421933d6606e345"
+        "PARENT:MD5-CAM-1.0.1" : "e3b7658d9cf2e5151d5744f19abe366e"
       },
       "details" : {
         "de" : {
@@ -8718,51 +8718,25 @@
                             "rmAttributeName" : "value",
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_QUANTITY",
+                              "rmTypeName" : "DV_COUNT",
+                              "occurrences" : "1..1",
                               "attributes" : [ {
                                 "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "property",
+                                "rmAttributeName" : "magnitude",
                                 "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "1..1",
-                                  "terminologyId" : {
-                                    "value" : "openehr"
-                                  },
-                                  "constraint" : [ "381" ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ {
-                                "@type" : "C_ATTRIBUTE_TUPLE",
-                                "members" : [ {
-                                  "@type" : "C_ATTRIBUTE",
-                                  "rmAttributeName" : "units",
-                                  "children" : [ ]
-                                }, {
-                                  "@type" : "C_ATTRIBUTE",
-                                  "rmAttributeName" : "magnitude",
-                                  "children" : [ ]
-                                } ],
-                                "tuples" : [ {
-                                  "@type" : "C_PRIMITIVE_TUPLE",
-                                  "members" : [ {
-                                    "@type" : "C_STRING",
-                                    "rmTypeName" : "STRING",
-                                    "constraint" : [ "eq" ]
-                                  }, {
-                                    "@type" : "C_REAL",
-                                    "rmTypeName" : "REAL",
-                                    "constraint" : [ {
-                                      "lower" : 0.0,
-                                      "upper" : 100.0,
-                                      "lowerIncluded" : true,
-                                      "upperIncluded" : true,
-                                      "lowerUnbounded" : false,
-                                      "upperUnbounded" : false
-                                    } ]
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 0,
+                                    "upper" : 100,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
                                   } ]
                                 } ]
-                              } ]
+                              } ],
+                              "attributeTuples" : [ ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
